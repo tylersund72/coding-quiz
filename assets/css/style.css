@@ -12,8 +12,14 @@
 
 h1 {
   font-size: 5.4rem;
-  color: white;
+  color: #fff;
   margin-bottom: 5rem;
+}
+
+p {
+    font-size: 2.4rem;
+    color: #fff;
+    margin-bottom: 5rem;
 }
 
 h2 {

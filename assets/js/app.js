@@ -109,10 +109,12 @@ choices.forEach((choice) => {
 
     if (classToApply === "correct") {
       incrementScore(SCORE_POINTS);
-    } else {
+    } else if (time >= 0) {
       time -= 5;
+    } else {
+        return window.location.assign("/end.html");
     }
-    console.log(time);
+    // console.log(time);
 
     selectedChoice.parentElement.classList.add(classToApply);
 
