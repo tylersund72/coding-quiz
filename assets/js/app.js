@@ -3,6 +3,10 @@ const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
 const scoreText = document.querySelector("#score");
 const progressBarFull = document.querySelector("#progressBarFull");
+const startingSeconds = 40;
+const countdownEl = document.getElementById("countdown");
+
+let time = startingSeconds
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -51,6 +55,15 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 4;
 
+setInterval(updateCountdown, 1000)
+
+function updateCountdown() {
+  let seconds = time;
+
+  countdownEl.innerHTML = ` ${seconds}`;
+  time--;
+}
+
 startGame = () => {
   questionCounter = 0;
   score = 0;
@@ -96,7 +109,10 @@ choices.forEach((choice) => {
 
     if (classToApply === "correct") {
       incrementScore(SCORE_POINTS);
+    } else {
+      time -= 5;
     }
+    console.log(time);
 
     selectedChoice.parentElement.classList.add(classToApply);
 
