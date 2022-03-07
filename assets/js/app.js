@@ -111,7 +111,7 @@ choices.forEach((choice) => {
       incrementScore(SCORE_POINTS);
     } else if (time >= 0) {
       time -= 5;
-    } else {
+    } else if (time <= 0) {
         return window.location.assign("/end.html");
     }
     // console.log(time);
