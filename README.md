@@ -12,4 +12,4 @@
 https://tylersund72.github.io/coding-quiz/
 
 ## Screenshot
-![Screenshot of application](/system64/code-quiz/img.jpg?raw=true "Optional Title")
+https://raw.githubusercontent.com/tylersund72/coding-quiz/main/assets/images/code-quiz.JPG
