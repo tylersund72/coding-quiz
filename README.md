@@ -12,4 +12,4 @@
 https://tylersund72.github.io/coding-quiz/
 
 ## Screenshot
-https://raw.githubusercontent.com/tylersund72/coding-quiz/main/assets/images/code-quiz.JPG
+![Screenshot](./assets/images/code-quiz.JPG)
