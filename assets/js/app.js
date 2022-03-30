@@ -75,7 +75,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("..end.html");
+    return window.location.assign("end.html");
   }
 
   questionCounter++;
@@ -112,7 +112,7 @@ choices.forEach((choice) => {
     } else if (time >= 0) {
       time -= 5;
     } else if (time <= 0) {
-        return window.location.assign("..end.html");
+        return window.location.assign("end.html");
     }
     // console.log(time);
 
